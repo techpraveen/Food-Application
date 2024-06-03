@@ -4,7 +4,6 @@ import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from './Pages/Home';
 import Pastoders from './Pages/Pastoders';
-import cart from './Pages/cart';
 
 function App() {
   return (
@@ -14,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pastoders" element={<Pastoders />} />
-        <Route path="/cart" element={<cart />} />
+        
+       
       </Routes>
       
       </BrowserRouter>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const cart=()=> {
+const cart = () => {
   return (
     <div>
-      
+      <h1>lujkygygygygkgyu</h1>
     </div>
   )
 }

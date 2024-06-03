@@ -64,3 +64,27 @@
    
 
 }
+@media (max-width:1050px){
+    .navbar .nav-logo{
+        width:140px ;
+        
+    }
+    .nav-logo p{
+        display:none;
+        
+      
+        
+    }
+    .nav-menu{
+        gap: 20px;
+        font-size: 17px;
+        margin-left: -80px;
+    }
+    .nav-cart{
+        gap: 5px;
+    }
+    .nav-cart-count{
+        margin-left: -10px;
+    }
+    
+}
