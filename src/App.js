@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import Home from './Pages/Home';
 import Pastoders from './Pages/Pastoders';
 import Cart from "./Pages/cart";
+import Footer from './Pages/footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/cart' element={<Cart/>}/>
        
       </Routes>
+      <Footer/>
       
       </BrowserRouter>
      
