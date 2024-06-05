@@ -10,6 +10,8 @@
     align-items: center;
     color: gray;
     font-size: max(1vw, 15px);
+    font-weight: 500;
+   
 }
 .cart-items-item{
     margin: 10px 0px;
@@ -17,6 +19,10 @@
 }
 .cart-items-item img{
     width: 50px;
+    
+    
+    
+
 
 }
 .cart hr{
@@ -90,6 +96,7 @@
     border-radius: 4px;
 
 }
+
 @media (max-width:750px){
     .cart-bottom{
         flex-direction: column-reverse;

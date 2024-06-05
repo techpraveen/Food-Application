@@ -54,17 +54,40 @@
 
 }
 .food-item-counter{
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 50%;
-    background-color: white;
+    display: grid;
+    grid-template-columns: 15fr 0.5fr 0.5fr ;
+    gap:25px;
+  
+    
 }
 .food-item-counter img{
     width: 30px;
+}
+.add-to-cart{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    background-color: tomato;
+    padding: 12px 0px;
+    cursor: pointer;
+    border-radius: pointer;
+    border-radius: 20px;
+    width: 90%;
+    border-radius: pointer;
+}
+.remove-from-cart{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    background-color: green;
+    padding: 12px 0px;
+    cursor: pointer;
+    border-radius: pointer;
+    border-radius: 20px;
+    width: 90%;
+    border-radius: pointer;
 }

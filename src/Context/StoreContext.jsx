@@ -9,6 +9,15 @@ const StoreContextProvider =(props)=>{
     const [cartItems , setCartItems] = useState({});
 
 
+    const Cart = (itemId)=>{
+        if (!cartItems[itemId]) {
+            setCartItems((prev)=>({...prev,[itemId]:1}))
+            
+        }
+       
+
+    
+    }
     const addToCart = (itemId)=>{
         if (!cartItems[itemId]) {
             setCartItems((prev)=>({...prev,[itemId]:1}))
@@ -23,6 +32,7 @@ const StoreContextProvider =(props)=>{
     const removeFromCart=(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
     }
+    
 
    const getTotalCartAmount=()=>{
     let totalAmount=0;
@@ -40,9 +50,10 @@ const StoreContextProvider =(props)=>{
         food_list ,
          cartItems ,
           setCartItems ,
-           addToCart , 
+           Cart , 
            removeFromCart,
-           getTotalCartAmount
+           getTotalCartAmount,
+           addToCart
 
     }
     return(
