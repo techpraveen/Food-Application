@@ -6,18 +6,30 @@ import { StoreContext } from '../../Context/StoreContext'
 
 const FoodItem=({id,name,price,discription, image})=> {
   const {addToCart,cartItems , Cart , removeFromCart} =useContext(StoreContext);
+  const [inCart, setInCart] = useState(false);
+
+  // Handler for form submission
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+    setInCart(!inCart); // Toggle the state
+  };
+
+ 
   return (
     <div className='food-item'>
         <div className="food-item-img-container">
             <img className="food-item-img" src={image} alt="" />
            
             
-              {
+              <form onSubmit={handleSubmit}>
+                {!inCart ?(
                 <button className='add-to-cart' id='add-to-cart' onClick={()=>Cart(id)}>Add to cart</button>
-                
-               } {
+                ):(
+               
                 <button className='remove-from-cart' id='remove-from-cart' onClick={()=>removeFromCart(id)}>Remove</button>
-              }
+            
+                  )}
+                </form>
             
            
 
