@@ -4,8 +4,9 @@ import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../../Context/StoreContext";
+import LoginSignup from "../loginSignUp/LoginSignup";
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("Home");
   const {getTotalCartAmount} = useContext(StoreContext);
   return (
@@ -37,12 +38,15 @@ const Navbar = () => {
           </Link>
           {menu === "PastOrders" ? <hr /> : <></>}
         </li>
+        
       </ul>
       <div className="nav-cart">
+
         <Link style={{ textDecoration: "none" }} to="/cart">
           <img src={cart_icon} alt="" />
         </Link>
         <div className={ getTotalCartAmount()===0?"":"nav-cart-count"}></div>
+        <button onClick={()=>setShowLogin(true)}>Login</button>
       </div>
     </div>
   );
