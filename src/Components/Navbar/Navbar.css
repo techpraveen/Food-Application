@@ -66,18 +66,18 @@
    
 
 }
-.nav-cart button{
+.btn2{
     
     border: none;
     color: white;
     background-color: tomato;
-    padding: 12px 0px;
+    padding:  0px;
     cursor: pointer;
     width: max(5vw , 100px);
     border-radius: pointer;
     border-radius: 20px;
-    height: 50px;
-    margin-left: 20px;
+    height: 40px;
+    
     font-size: 15px;
 
 }
@@ -102,6 +102,11 @@
     }
     .nav-cart-count{
         margin-left: -10px;
+    }
+    .pastorder{
+        display: none;
+        
+
     }
     
 }

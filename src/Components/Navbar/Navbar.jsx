@@ -28,7 +28,8 @@ const Navbar = ({setShowLogin}) => {
           </Link>
           {menu === "home" ? <hr /> : <></>}
         </li>
-        <li
+        <button className="btn2" onClick={()=>setShowLogin(true)}>Login</button>
+        {/* <li className="pastorder"
           onClick={() => {
             setMenu("PastOrders");
           }}
@@ -37,7 +38,8 @@ const Navbar = ({setShowLogin}) => {
             PastOrders
           </Link>
           {menu === "PastOrders" ? <hr /> : <></>}
-        </li>
+        </li> */}
+        
         
       </ul>
       <div className="nav-cart">
@@ -46,7 +48,7 @@ const Navbar = ({setShowLogin}) => {
           <img src={cart_icon} alt="" />
         </Link>
         <div className={ getTotalCartAmount()===0?"":"nav-cart-count"}></div>
-        <button onClick={()=>setShowLogin(true)}>Login</button>
+        
       </div>
     </div>
   );
